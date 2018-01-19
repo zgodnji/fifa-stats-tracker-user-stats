@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: user-stat
-        image: jojo27/fifa-stats-tracker-user-stat:latest
+        image: ancina/user-stat:latest
         ports:
         - containerPort: 8087
           name: server
@@ -25,7 +25,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: users
+  name: user-stat
 spec:
   type: NodePort
   ports:
