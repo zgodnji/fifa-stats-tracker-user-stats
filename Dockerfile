@@ -6,6 +6,6 @@ WORKDIR /app
 
 ADD ./target/user-stat-1.0.0.jar /app
 
-EXPOSE 8081
+EXPOSE 8087
 
 CMD ["java", "-jar", "user-stat-1.0.0.jar"]
